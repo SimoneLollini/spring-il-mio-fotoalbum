@@ -1,5 +1,6 @@
 package org.photo.springilmiofotoalbum.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.List;
 @Table(name = "categories")
 public class Category {
     private String name;
+    @JsonIgnore
     @ManyToMany(mappedBy = "categories")
     private List<Photo> photos;
     @Id

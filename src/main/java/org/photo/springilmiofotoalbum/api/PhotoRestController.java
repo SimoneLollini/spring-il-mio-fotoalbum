@@ -20,9 +20,9 @@ public class PhotoRestController {
     @GetMapping
     public List<Photo> index(@RequestParam(name = "q") Optional<String> search) {
         if (search.isPresent())
-            return photoService.getPhotoFilteredByTitle(search.get());
+            return photoService.findByVisibilityTrueTitleContaining(search.get());
 
-        return photoService.getAllPhotos();
+        return photoService.photosVisibilityTrue();
     }
 
     @GetMapping("/{photoId}")

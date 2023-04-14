@@ -5,6 +5,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface PhotoRepository extends JpaRepository<Photo,Integer> {
-public List<Photo> findByTitleContainingIgnoreCase(String title);
+public interface PhotoRepository extends JpaRepository<Photo, Integer> {
+    public List<Photo> findByTitleContainingIgnoreCase(String title);
+
+    public List<Photo> findByVisibilityTrue();
+
+    public List<Photo> findByVisibilityTrueAndTitleContainingIgnoreCase(String keyword);
+
+
 }

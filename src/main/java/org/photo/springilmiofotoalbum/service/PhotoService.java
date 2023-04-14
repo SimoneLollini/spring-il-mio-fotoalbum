@@ -24,6 +24,14 @@ public class PhotoService {
         return photoRepository.findByTitleContainingIgnoreCase(keyword);
     }
 
+    public List<Photo> findByVisibilityTrueTitleContaining(String keyword) {
+        return photoRepository.findByVisibilityTrueAndTitleContainingIgnoreCase(keyword);
+    }
+
+    public List<Photo> photosVisibilityTrue() {
+        return photoRepository.findByVisibilityTrue();
+    }
+
     public Photo createPhoto(Photo formPhoto) {
         Photo newPhoto = new Photo();
         newPhoto.setId(formPhoto.getId());
@@ -62,5 +70,6 @@ public class PhotoService {
             return false;
         }
     }
+
 
 }
