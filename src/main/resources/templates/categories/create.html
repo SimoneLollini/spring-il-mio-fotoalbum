@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<th:block th:replace="/fragments/head :: head"></th:block>
+<body>
+<div class="container">
+    <h1>Category create</h1>
+    <form id="categorie-id" method="post" th:action="@{/categories/create}" th:object="${category}">
+        <ul class="text-danger">
+            <li
+                    th:each="err : ${#fields.allErrors()}"
+                    th:text="${err}">
+            </li>
+        </ul>
+        <div class="mb-3">
+            <label class="form-label" for="name">Nome</label>
+            <input aria-describedby="inputGroup-sizing-default" aria-label="Sizing example input"
+                   class="form-control "
+                   id="name"
+                   th:classappend="${#fields.hasErrors('name') ? 'is-invalid' : ''}"
+                   th:field="*{name}" type="text">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('name')}">
+                <ul class="text-danger">
+                    <li th:each="err : ${#fields.errors('name')}" th:text="${err}"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <a class="btn btn-outline-dark" th:href="@{/categories}">Cancela</a>
+            <button class="btn btn-outline-dark" type="submit">Aggiungi</button>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
+
+
+<!--titolo-->
+<!--descrizione-->
+<!--url-->
+<!--visibile-->
+<!--categorie-->
