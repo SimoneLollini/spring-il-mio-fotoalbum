@@ -2,7 +2,79 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <th:block th:replace="/fragments/head :: head"></th:block>
 <body>
-<h1>Photo create</h1>
+<div class="container">
+    <h1>Photo create</h1>
+    <form id="photo-id" method="post" th:action="@{/photos/create}" th:object="${photo}">
+        <ul class="text-danger">
+            <li
+                    th:each="err : ${#fields.allErrors()}"
+                    th:text="${err}">
+            </li>
+        </ul>
+        <div class="mb-3">
+            <label class="form-label" for="title">Title</label>
+            <input aria-describedby="inputGroup-sizing-default" aria-label="Sizing example input"
+                   class="form-control "
+                   id="title"
+                   th:classappend="${#fields.hasErrors('title') ? 'is-invalid' : ''}"
+                   th:field="*{title}" type="text">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('title')}">
+                <ul class="text-danger">
+                    <li th:each="err : ${#fields.errors('name')}" th:text="${err}"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="description">Descrizione</label>
+            <input aria-describedby="inputGroup-sizing-default" aria-label="Sizing example input"
+                   class="form-control" id="description"
+                   th:classappend="${#fields.hasErrors('description') ? 'is-invalid' : ''}"
+                   th:field="*{description}" type="text">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('description')}">
+                <ul class="text-danger">
+                    <li th:each="err : ${#fields.errors('description')}" th:text="${err}"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="url">Url immagine</label>
+            <input aria-describedby="inputGroup-sizing-default" aria-label="Sizing example input"
+                   class="form-control" id="url"
+                   th:classappend="${#fields.hasErrors('url') ? 'is-invalid' : ''}"
+                   th:field="*{url}" type="text">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('url')}">
+                <ul class="text-danger">
+                    <li th:each="err : ${#fields.errors('url')}" th:text="${err}"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>Categorie:</label>
+            <div class="input_wrapper" th:each="category :${categories}">
+                <input th:field="*{categories}" th:id="|category_${category.id}|" th:value="${category.id}"
+                       type="checkbox">
+                <label th:for="${category.id}" th:text="${category.name}"></label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <input id="visibility"
+                   th:classappend="${#fields.hasErrors('visibility') ? 'is-invalid' : ''}"
+                   th:field="*{visibility}" type="checkbox">
+            <label class="form-label" for="visibility">Visibilità</label>
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('visibility')}">
+                <ul class="text-danger">
+                    <li th:each="err : ${#fields.errors('visibility')}" th:text="${err}"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <a class="btn btn-outline-dark" th:href="@{/photos}">Cancela</a>
+            <button class="btn btn-outline-dark" type="submit">Aggiungi</button>
+        </div>
+    </form>
+</div>
+
+
 </body>
 </html>
 

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<th:block th:replace="/fragments/head :: head"></th:block>
+<body>
+
+Errore di tipo 5XX
+<div th:if="${exception}">
+    <!-- only in dev mode -->
+    <p th:text="${exception}"></p>
+    <p th:text="${trace}"></p>
+</div>
+</body>
+</html>
