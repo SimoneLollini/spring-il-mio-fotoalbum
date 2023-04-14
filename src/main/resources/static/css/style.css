@@ -1,0 +1,21 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+.card:hover,
+.card:hover img{
+transition: transform 0.5s;
+ transform: scale(1.01);
+ filter: grayscale(0%);
+}
+
+
+.card img{
+ transition: transform 0.8s;
+ filter: grayscale(100%);
+}

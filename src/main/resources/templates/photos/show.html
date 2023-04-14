@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
 <th:block th:replace="/fragments/head :: head"></th:block>
-<body>
-<h1>Photo show</h1>
+<body class="bg-secondary text-white">
+
+<div class="container mt-3" th:object="${photo}">
+    <h1 th:text="*{title}"></h1>
+    <p th:text="*{description}"></p>
+    <div class="badge bg-success text-bg-success" th:each="category : *{categories}" th:object="${category}">
+        <div th:text="*{name}"></div>
+    </div>
+    <div class="col-6 my-4">
+        <img th:src="*{url}">
+    </div>
+</div>
 </body>
 </html>
-
-
-<!--titolo-->
-<!--descrizione-->
-<!--url-->
-<!--visibile-->
-<!--categorie-->

@@ -15,6 +15,7 @@ visibile
 categorie
 Una foto può essere collegata a più categorie, e una categoria può essere collegata a più foto.
 Prevedere quindi anche una semplice pagina di lista, creazione e cancellazione categorie.
+
 Deve essere presente anche una homepage pubblica, nella quale le foto (visibili) sono mostrate agli utenti.
 Devono essere filtrabili per titolo.
 Prevedere sempre nell’homepage pubblica un semplice form di contatto avente i campi email e messaggio.

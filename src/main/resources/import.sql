@@ -1,7 +1,19 @@
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione natura', 'Natura', 'https://picsum.photos/seed/natura/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/natura/300/300', 1);
 INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione picsum', 'Picsum', 'https://picsum.photos/seed/picsum/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione barca', 'Barca', 'https://picsum.photos/seed/lake/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione barca', 'Barca', 'https://picsum.photos/seed/lake/300/300', 0);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione qualcosa', 'Tigre', 'https://picsum.photos/seed/deh/300/300', 0);
 INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione animali', 'Tigre', 'https://picsum.photos/seed/animales/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/qualcosa/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione random', 'Picsum', 'https://picsum.photos/seed/random/300/300', 0);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione randomica', 'Barca', 'https://picsum.photos/seed/randomica/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione animali', 'Tigre', 'https://picsum.photos/seed/animales/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/asdfa/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione random', 'Picsum', 'https://picsum.photos/seed/random/300/300', 0);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione randomica', 'Barca', 'https://picsum.photos/seed/randomica/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione qualcosa', 'Tigre', 'https://picsum.photos/seed/animales/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/gfas/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione random', 'Picsum', 'https://picsum.photos/seed/random/300/300', 0);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione randomica', 'Barca', 'https://picsum.photos/seed/randomica/300/300', 1);
 
 INSERT INTO db_photo_album.`user`(id, password, username)VALUES(1, '{noop}password', 'admin');
 INSERT INTO db_photo_album.`user`(id, password, username)VALUES(2, '{noop}password', 'user');
