@@ -19,6 +19,11 @@
                              th:text="${category.name}">
                         </div>
                     </div>
+                    <form th:action="@{'/photos/delete/{id}'(id=*{id})}">
+                        <button class="btn btn-danger badge" th:action>
+                            Elimina
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>

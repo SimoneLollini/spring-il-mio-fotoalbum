@@ -4,7 +4,7 @@
 <body>
 <div class="container">
     <h1>Photo edit</h1>
-    <form id="photo-id" method="post" th:action="@{/photo/edit/{id}(id=*{id})}" th:object="${photo}">
+    <form id="photo-id" method="post" th:action="@{/photos/edit/{id}(id=*{id})}" th:object="${photo}">
         <ul class="text-danger">
             <li
                     th:each="err : ${#fields.allErrors()}"

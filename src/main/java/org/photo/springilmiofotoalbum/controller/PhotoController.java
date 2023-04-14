@@ -83,8 +83,30 @@ public class PhotoController {
         }
     }
 
-    @GetMapping("/show/{id}")
-    public String show(@PathVariable("id") Integer id) {
-        return "/photos/show";
+    @GetMapping("/{id}")
+    public String show(@PathVariable("id") Integer id, Model model) {
+        try {
+            Photo photo = photoService.getById(id);
+            model.addAttribute("photo", photo);
+            return "/photos/show";
+        } catch (RuntimeException e) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Foto non trovata");
+        }
     }
+
+    @GetMapping("/delete/{id}")
+    public String delete(@PathVariable Integer id, RedirectAttributes redirectAttributes) {
+        try {
+            boolean success = photoService.deleteById(id);
+            if (success)
+                redirectAttributes.addFlashAttribute("message", "Foto eliminata!");
+            else {
+                redirectAttributes.addFlashAttribute("message", "Non puoi eliminare!");
+            }
+        } catch (RuntimeException e) {
+            redirectAttributes.addFlashAttribute("message", "Pizza non trovata!");
+        }
+        return "redirect:/photos";
+    }
+
 }
