@@ -1,0 +1,11 @@
+@import "/node_modules/bootstrap/scss/bootstrap";
+@use '../scss/partials/variables.scss' as *;
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: $dark;
+    color: white;
+}
