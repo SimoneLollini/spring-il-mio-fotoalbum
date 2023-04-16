@@ -19,9 +19,9 @@ export default {
         <div class="container h-100 d-flex align-items-center justify-content-center">
             <div class="row">
                 <div class="col-2" v-for="photo in store.photos">
-                    <div class="card bg-transparent">
+                    <a href="/" class="card bg-transparent">
                         <img :src="photo.url" :alt="photo.title">
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -30,7 +30,6 @@ export default {
 
 <style lang="scss" scoped>
 .main_wrapper {
-    z-index: 10000;
     height: 100%;
     width: 100%;
     position: absolute;

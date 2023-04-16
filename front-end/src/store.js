@@ -7,6 +7,9 @@ export const store = reactive({
     photoToSearch: '',
     API_URL_PHOTO: 'http://localhost:8080/api/photos',
     callApi(URL) {
+        if (this.photoToSearch) {
+            URL += "?q=" + this.photoToSearch.toLocaleLowerCase()
+        }
         axios
             .get(URL)
             .then(response => {
