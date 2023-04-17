@@ -1,19 +1,19 @@
 INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/natura/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione picsum', 'Picsum', 'https://picsum.photos/seed/picsum/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione barca', 'Barca', 'https://picsum.photos/seed/lake/300/300', 0);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione qualcosa', 'Tigre', 'https://picsum.photos/seed/deh/300/300', 0);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione picsum', 'Picsum', 'https://picsum.photos/seed/picsum/300/300', 0);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione barca', 'Barca', 'https://picsum.photos/seed/lake/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione qualcosa', 'Tigre', 'https://picsum.photos/seed/deh/300/300', 1);
 INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione animali', 'Tigre', 'https://picsum.photos/seed/animales/300/300', 1);
 INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/qualcosa/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione random', 'Picsum', 'https://picsum.photos/seed/random/300/300', 0);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione random', 'Picsum', 'https://picsum.photos/seed/random/300/300', 1);
 INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione randomica', 'Barca', 'https://picsum.photos/seed/randomica/300/300', 1);
 INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione animali', 'Tigre', 'https://picsum.photos/seed/animales/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/asdfa/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/asdfa/300/300', 0);
 INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione random', 'Picsum', 'https://picsum.photos/seed/random/300/300', 0);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione randomica', 'Barca', 'https://picsum.photos/seed/randomica/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione qualcosa', 'Tigre', 'https://picsum.photos/seed/animales/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione randomica', 'Barca', 'https://picsum.photos/seed/randomica/300/300', 0);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione qualcosa', 'Tigre', 'https://picsum.photos/seed/animales/300/300', 0);
 INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/gfas/300/300', 1);
 INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione random', 'Picsum', 'https://picsum.photos/seed/random/300/300', 0);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione randomica', 'Barca', 'https://picsum.photos/seed/randomica/300/300', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione randomica', 'Barca', 'https://picsum.photos/seed/randomica/300/300', 0);
 
 INSERT INTO db_photo_album.`user`(id, password, username)VALUES(1, '{noop}password', 'admin');
 INSERT INTO db_photo_album.`user`(id, password, username)VALUES(2, '{noop}password', 'user');
@@ -39,3 +39,12 @@ INSERT INTO db_photo_album.category_photos(photo_id, category_id)VALUES(3, 2);
 INSERT INTO db_photo_album.category_photos(photo_id, category_id)VALUES(3, 3);
 INSERT INTO db_photo_album.category_photos(photo_id, category_id)VALUES(4, 1);
 INSERT INTO db_photo_album.category_photos(photo_id, category_id)VALUES(4, 2);
+
+
+
+INSERT INTO db_photo_album.messages(email, `text`)VALUES('simo@example.com', 'Belle foto!');
+INSERT INTO db_photo_album.messages(email, `text`)VALUES('francesca@example.com', 'Belle fotografie!');
+INSERT INTO db_photo_album.messages(email, `text`)VALUES('fabio@example.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.!');
+INSERT INTO db_photo_album.messages(email, `text`)VALUES('teresa@example.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');
+INSERT INTO db_photo_album.messages(email, `text`)VALUES('lorenzo@example.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.!');
+INSERT INTO db_photo_album.messages(email, `text`)VALUES('alice@example.com', 'Che Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. fotografie!');

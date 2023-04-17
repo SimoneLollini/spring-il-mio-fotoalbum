@@ -92,7 +92,7 @@ public class CategoryController {
                 redirectAttributes.addFlashAttribute("message", "Non puoi eliminare!");
             }
         } catch (RuntimeException e) {
-            redirectAttributes.addFlashAttribute("message", "Pizza non trovata!");
+            redirectAttributes.addFlashAttribute("message", "Categoria non trovata!");
         }
         return "redirect:/categories";
     }

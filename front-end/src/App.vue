@@ -1,30 +1,21 @@
 <script>
-import OverlayGradient from "./components/OverlayGradient.vue";
-import AppHeader from "./components/AppHeader.vue";
-import HeroImage from "./components/HeroImage.vue";
-import AppMain from "./components/AppMain.vue"
 import { store } from "./store.js";
+import HomeView from "./views/HomeView.vue";
 export default {
     name: 'App',
     components: {
-        AppHeader,
-        HeroImage,
-        OverlayGradient,
-        AppMain
+        HomeView
     },
     data() {
         return {
-            store
+            store,
         }
     }
 }
 </script>
 
 <template>
-    <OverlayGradient />
-    <AppHeader />
-    <HeroImage />
-    <AppMain />
+    <RouterView></RouterView>
 </template>
 <style lang="scss">
 @use './assets/scss/style.scss' as *;

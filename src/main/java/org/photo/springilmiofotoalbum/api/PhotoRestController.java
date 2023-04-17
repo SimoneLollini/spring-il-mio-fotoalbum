@@ -33,4 +33,6 @@ public class PhotoRestController {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Foto non trovata!");
         }
     }
+
+
 }

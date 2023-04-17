@@ -30,6 +30,7 @@ export default {
     margin: 10px;
 
     input {
+        outline: none;
         font-weight: 200;
         color: white;
         border-radius: 5px;

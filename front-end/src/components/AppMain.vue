@@ -4,11 +4,14 @@ export default {
     name: 'AppMain',
     components: {
 
-    }, data() {
+    },
+    data() {
         return {
-            store
+            store,
         }
-    }, mounted() {
+    },
+    methods: {},
+    mounted() {
         store.callApi(store.API_URL_PHOTO)
     }
 }
@@ -35,5 +38,17 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
+
+
+    .not_found {
+        background-color: rgba(0, 0, 0, 0.556);
+        padding: 1.5rem 2rem;
+        border-radius: 1.5rem;
+    }
+}
+
+.wrapper_slider {
+    width: 1200px;
+    height: 800px;
 }
 </style>

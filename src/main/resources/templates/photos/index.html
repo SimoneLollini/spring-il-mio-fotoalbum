@@ -18,7 +18,7 @@
 
     <div class="row row-cols-5 gy-5">
         <div class="col" th:each="photo : ${photos}">
-            <a class="card h-100" th:href="@{'/photos/{id}'(id=*{id})}" th:object="${photo}">
+            <a class="card h-100 bg-transparent" th:href="@{'/photos/{id}'(id=*{id})}" th:object="${photo}">
                 <img class="card-img-top img-fluid" th:alt="*{title}" th:src="*{url}">
                 <div class="card-body position-relative">
                     <div class="btn p-2 rounded-circle badge position-absolute m-2 top-0 end-0"
@@ -27,8 +27,6 @@
                     </div>
                     <div class="fs-4 text-dark  " th:text="*{title}">
                     </div>
-                    <p class="text-secondary fs-5" th:text="*{description}">
-                    </p>
                     <div class="mb-5">
                         <div class="btn btn-sm btn-outline-dark" th:each="category : *{categories}"
                              th:text="${category.name}">
