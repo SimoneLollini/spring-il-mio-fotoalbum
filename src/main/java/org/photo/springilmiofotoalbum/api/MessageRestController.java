@@ -18,6 +18,7 @@ public class MessageRestController {
     public boolean create(@Valid @RequestBody Message message, BindingResult bindingResult) {
         if (bindingResult.hasErrors())
             bindingResult.getAllErrors();
+        messageService.createMessage(message);
         return true;
     }
 }

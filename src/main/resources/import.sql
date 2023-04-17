@@ -1,19 +1,19 @@
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/natura/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione picsum', 'Picsum', 'https://picsum.photos/seed/picsum/300/300', 0);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione barca', 'Barca', 'https://picsum.photos/seed/lake/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione qualcosa', 'Tigre', 'https://picsum.photos/seed/deh/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione animali', 'Tigre', 'https://picsum.photos/seed/animales/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/qualcosa/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione random', 'Picsum', 'https://picsum.photos/seed/random/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione randomica', 'Barca', 'https://picsum.photos/seed/randomica/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione animali', 'Tigre', 'https://picsum.photos/seed/animales/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/asdfa/300/300', 0);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione random', 'Picsum', 'https://picsum.photos/seed/random/300/300', 0);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione randomica', 'Barca', 'https://picsum.photos/seed/randomica/300/300', 0);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione qualcosa', 'Tigre', 'https://picsum.photos/seed/animales/300/300', 0);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione ', 'Natura', 'https://picsum.photos/seed/gfas/300/300', 1);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione random', 'Picsum', 'https://picsum.photos/seed/random/300/300', 0);
-INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('descrizione randomica', 'Barca', 'https://picsum.photos/seed/randomica/300/300', 0);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.', 'Natura', 'https://picsum.photos/seed/natura/800/800', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.picsum', 'Picsum', 'https://picsum.photos/seed/picsum/800/800', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.barca', 'Barca', 'https://picsum.photos/seed/lake/800/800', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.qualcosa', 'Tigre', 'https://picsum.photos/seed/deh/800/800', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.animali', 'Tigre', 'https://picsum.photos/seed/animales/800/800', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.', 'Natura', 'https://picsum.photos/seed/qualcosa/800/800', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.random', 'Picsum', 'https://picsum.photos/seed/random/800/800', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.randomica', 'Barca', 'https://picsum.photos/seed/randomica/800/800', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.animali', 'Tigre', 'https://picsum.photos/seed/animales/800/800', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.', 'Natura', 'https://picsum.photos/seed/asdfa/800/800', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.random', 'Picsum', 'https://picsum.photos/seed/random/800/800', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.randomica', 'Barca', 'https://picsum.photos/seed/randomica/800/800', 0);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.qualcosa', 'Tigre', 'https://picsum.photos/seed/animales/800/800', 0);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.', 'Natura', 'https://picsum.photos/seed/gfas/800/800', 1);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.random', 'Picsum', 'https://picsum.photos/seed/random/800/800', 0);
+INSERT INTO db_photo_album.photos(description, title, url, visibility)VALUES('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id.randomica', 'Barca', 'https://picsum.photos/seed/randomica/800/800', 0);
 
 INSERT INTO db_photo_album.`user`(id, password, username)VALUES(1, '{noop}password', 'admin');
 INSERT INTO db_photo_album.`user`(id, password, username)VALUES(2, '{noop}password', 'user');
@@ -24,9 +24,9 @@ INSERT INTO role (id, name) VALUES(2, 'USER');
 INSERT into user_roles(user_id, roles_id) VALUES(1, 1);
 INSERT into user_roles(user_id, roles_id) VALUES(2, 2);
 
-INSERT INTO db_photo_album.categories(name)VALUES('verde');
-INSERT INTO db_photo_album.categories(name)VALUES('rosso');
-INSERT INTO db_photo_album.categories(name)VALUES('giallo');
+INSERT INTO db_photo_album.categories(name)VALUES('Natura');
+INSERT INTO db_photo_album.categories(name)VALUES('Animali');
+INSERT INTO db_photo_album.categories(name)VALUES('Mare');
 
 INSERT INTO db_photo_album.category_photos(photo_id, category_id)VALUES(1, 1);
 INSERT INTO db_photo_album.category_photos(photo_id, category_id)VALUES(1, 2);
