@@ -25,25 +25,34 @@ export const store = reactive({
     isPhotosEmpty() {
         return this.photos.length > 0
     },
-    mouveSlider: () => {
-        store.photos.forEach(element => {
-            element.position++
-            if (element.position > 1300) {
-                element.position = -1200
-            }
-        });
-    },
-    addKeyPosition: () => {
-        store.photos.forEach((element, i) => {
-            console.log(i)
-            if (i == 0) {
-                element.position = 10;
-            } else if (i == 1) {
-                element.position = 20;
-            } else {
-                element.position = i * 10;
-            }
-        });
-    },
+    categoryColor() {
+        const randValue = Math.floor(Math.random() * 8);
+        switch (randValue) {
+            case 1:
+                return "bg-dark"
+                break;
+            case 3:
+                return "bg-info"
+                break;
+            case 4:
+                return "bg-warning"
+                break;
+            case 5:
+                return "bg-danger"
+                break;
+            case 6:
+                return "bg-success"
+                break;
+            case 7:
+                return "bg-secondary"
+                break;
+
+            default:
+                return "bg-primary"
+                break;
+        }
+
+
+    }
 },
 )

@@ -20,11 +20,12 @@ export default {
 <template>
     <div class="main_wrapper" v-if="store.photos">
         <div class="container h-100 d-flex align-items-center justify-content-center">
-            <div class="row">
+            <div class="row gap-3 justify-content-center">
                 <div class="col-2" v-for="photo in store.photos">
-                    <a href="/" class="card bg-transparent">
+                    <router-link :to="{ name: 'single-photo', params: { id: photo.id } }" href="/"
+                        class=" h-100 card bg-transparent">
                         <img :src="photo.url" :alt="photo.title">
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>
