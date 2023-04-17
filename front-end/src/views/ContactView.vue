@@ -1,17 +1,16 @@
 <script>
 import OverlayGradient from "../components/OverlayGradient.vue";
-import AppHeader from "../components/AppHeader.vue";
 import HeroImage from "../components/HeroImage.vue";
+import NavLinks from "../components/NavLinks.vue";
 
 import { store } from "../store.js";
 import axios from "axios";
 export default {
     name: 'ContactView',
     components: {
-        AppHeader,
         HeroImage,
         OverlayGradient,
-
+        NavLinks
     },
     data() {
         return {
@@ -48,7 +47,7 @@ export default {
 <template>
     <div class="canvas_contact w-100 position-absolute top-0 left-0">
         <div class="p-5 col-5 text-white">
-            <h1>Contact</h1>
+            <h1 class="pt-5">Contact</h1>
             <form @submit.prevent="sendForm()">
                 <div class="mb-3">
                     <label for="" class="form-label">Email</label>
@@ -69,9 +68,23 @@ export default {
     </div>
     <OverlayGradient />
     <HeroImage />
+    <div class="wrapper_top">
+        <NavLinks />
+    </div>
 </template>
 <style scoped lang="scss">
 .canvas_contact {
     z-index: 10000;
+}
+
+.wrapper_top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
 }
 </style>

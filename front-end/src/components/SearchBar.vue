@@ -13,7 +13,7 @@ export default {
 
 
 <template>
-    <div class="search_bar gap-2 pt-2">
+    <div class="search_bar gap-2 pt-2" v-if="!this.$route.name == 'single-photo'">
         <input class="form_control" @keyup.enter="store.callApi(store.API_URL_PHOTO)" type="text" placeholder="Cerca"
             v-model="store.photoToSearch">
         <button class=" btn p-1 btn_darker" @click="store.callApi(store.API_URL_PHOTO)">Cerca</button>

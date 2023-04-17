@@ -3,6 +3,23 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
+body{
+   background-image: linear-gradient(rgb(17, 17, 17), rgb(62, 62, 62));
+}
+body .photos_main{
+    height:100vh;
+}
+.photos_main .row{
+      margin-top: 1.5rem;
+      height:70vh;
+      overflow-y: auto;
+}
+
+.card-body {
+  border-radius: 0 0 5px 5px;
+}
+
 a{
     text-decoration: none;
 }

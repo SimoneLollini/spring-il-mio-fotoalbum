@@ -32,6 +32,7 @@ export default {
 </script>
 
 <template>
+    <AppHeader></AppHeader>
     <div class="wrapper_background">
         <div class="container py-5 text-white" v-if="!this.loading">
             <div class="row pt-5">

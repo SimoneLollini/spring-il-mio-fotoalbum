@@ -1,10 +1,12 @@
 <script>
 import { store } from "../store.js";
 import SearchBar from './SearchBar.vue';
+import NavLinks from "./NavLinks.vue";
 export default {
     name: 'AppHeader',
     components: {
         SearchBar,
+        NavLinks
     }, data() {
         return {
             store
@@ -16,6 +18,7 @@ export default {
 <template>
     <header>
         <div class="container d-flex justify-content-between align-items-center">
+            <NavLinks />
             <SearchBar />
         </div>
     </header>

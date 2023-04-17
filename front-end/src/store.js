@@ -13,11 +13,9 @@ export const store = reactive({
         axios
             .get(URL)
             .then(response => {
-                console.log(response);
                 this.photos = response.data
             })
             .catch(error => {
-                console.log(error)
                 this.errored = true
             })
             .finally(() => this.loading = false)
